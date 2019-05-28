@@ -1,0 +1,195 @@
+ 
+ 
+ 
+ abajo izquierda  m[i-1][j+1]
+ abajo derecha	m[i+1][j+1]
+ 
+ izquierda abajo m[i-1][j+1]
+ izquierda arriba m[i-1][j-1]
+ 
+ arriba izquierda m[i-1][j-1]
+ arriba derecha m[i+1][j-1]
+ 
+ derecha arriba m[i+1][j-1]
+ derecha abajo m[i+1][j+1]
+ 
+ public void southWest() {
+		int c = 1;
+		int m = inicio;
+		matriz[m][k] = c++; 
+
+
+		for(int i = 0; i< matriz.length; i++) {
+			for(int j = 0; j < matriz[size-1].length; j++) {
+
+				if(m+1 == size && k-1 >= 0 ){
+					matriz[0][k-1] = c;
+					c++;
+					System.out.print("" + matriz[i][j]);
+
+				}
+
+			}
+			System.out.println("");
+
+		}
+
+	}
+	
+	
+	
+	if(start + 1 == size && p - 1 >= 0 && matriz[0][p - 1] != 0){
+
+					matriz[0][p-1] = c;
+					i = 0;
+					j = p-1;
+
+				}else {
+					matriz[i][j - 1] = c;
+				}	
+				if(i + 1 < start && j - 1 < 0 && matriz[i + 1][start] != 0){
+
+					matriz[i+1][start] = c;
+					i++;
+					j = start;
+
+				}else
+				if(i - 1 <= start && j - 1 <= start ){
+					matriz[i - 1][j - 1] = c;
+
+				}
+				c++;
+				
+				
+				left [k] [0] 
+				r k i-1
+				top 0 k
+				btom i-1 k
+				
+				public void northwest(){
+				
+				
+				
+				
+				
+				
+				}
+				
+				
+				
+				
+	public void caseBottom(){
+		int p = k;
+		int i = 0;
+		int j = 0;
+		int c = 1;
+		int count = size*size;
+		matriz[start][p] = c++;
+
+		while(count > 1) {
+
+			if(start + 1 == size && p - 1 >= 0 && matriz[0][p - 1] != 0){
+
+				matriz[0][p-1] = c;
+				i = 0;
+				j = p-1;
+
+			}else if(i + 1 < start && j - 1 < 0 && matriz[i + 1][start] != 0){
+
+				matriz[i+1][start] = c;
+				i++;
+				j = start;
+
+			}else if(i - 1 >= 0 && j - 1 >= 0 && matriz[i - 1][j - 1] != 0 ){
+
+				matriz[i - 1][j - 1] = c;
+				i--;
+				j--;
+
+			}else if(i - 1 < 0 && j + 1 > size && matriz[0][start] != 0) {
+
+				matriz[0][start] = c;
+				i--;
+				j++;
+
+			}else {
+
+				if(j - 1 > 0) {
+
+					matriz[i][j - 1] = c;
+					j--;
+				}
+			}
+			c++;
+
+			System.out.print(""+matriz[i][j]);
+			//System.out.println(""+ c);
+			count--;
+		}
+
+		// pensar en acoplar el ciclo con variables que estoy utilizando al definir las posiciones de las matrices 
+		// for(int i = 0; i < size*size; i++) i dont know man fuck hell 
+
+
+
+	}
+	
+	
+	
+	
+	
+	
+	for(int m = 0; m<matriz.length;m++){ // filas
+			for(int n = 0; n < matriz[size-1].length ;n++){ // columnas
+				matriz[m][n] = c;
+				c++;
+				System.out.print(""+matriz[m][n]);
+			}
+			System.out.println("");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if(start + 1 == size && p - 1 >= 0 && matriz[0][p - 1] != 0){
+				matriz[0][p-1] = coun;
+				 i = 0;
+				 j = p - 1;
+				 
+			}else if(i + 1 < start && j - 1 < 0 && matriz[i + 1][start] != 0){
+				matriz[i+1][start] = coun;
+				i++;
+				j = start;				
+
+			}else if(i - 1 >= 0 && j - 1 >= 0 && matriz[i - 1][j - 1] != 0 ){				
+				matriz[i - 1][j - 1] = coun;
+				i--;
+				j--;
+
+			}else if(i - 1 < 0 && j + 1 > size && matriz[0][start] != 0) {
+				matriz[0][start] = coun;
+				i = 0;
+				j = start;
+				
+
+			}else {
+				if(j - 1 > 0) {
+					matriz[i][j - 1] = coun;
+					j--;
+					
+				}
+			}
+			
+			
+			
+		
+
+				
+				
+				
+			
