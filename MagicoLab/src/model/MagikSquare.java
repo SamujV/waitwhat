@@ -36,6 +36,10 @@ public class MagikSquare {
 
 	}
 
+	public void commitTry(){
+		String hola = "que pasa crack maquina mastodonte, aqui intentando hacer algo con github exitos mano";
+	}
+
 	public void one(){		
 
 		int c = 1;
